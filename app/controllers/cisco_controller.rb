@@ -3,7 +3,7 @@ require 'twilio-ruby'
 
 class CiscoController < ApplicationController
   def ise_guest
-    params['mandrill_events'].each do |event|
+    params[:mandrill_events].each do |event|
       message = event['msg']['text']
       puts "\n\n\n\n******Message Text:\n\n#{message}\n\n\n\n"
       attributes = parse_email(message)
