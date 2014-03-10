@@ -10,6 +10,8 @@ class CiscoController < ApplicationController
 
       send_message(attributes[:to], "Your Teamsquare WiFi username is #{attributes[:username]} and password is #{attributes[:password]}.")
     end
+    
+    render :json => {:success => true}, :status => 200
   end
 
   def head_ise_guest
