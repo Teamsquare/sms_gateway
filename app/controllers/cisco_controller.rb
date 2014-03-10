@@ -2,6 +2,9 @@ require 'rubygems'
 require 'twilio-ruby'
 
 class CiscoController < ApplicationController
+  include MessageHelper
+  include EmailContentHelper
+
   def ise_guest
     JSON.parse(params[:mandrill_events]).each do |event|
       message = event['msg']['text']
