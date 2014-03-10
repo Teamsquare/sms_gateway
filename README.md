@@ -5,6 +5,11 @@ Simple processor for receiving emails from Mandrill and forwarding them on to Tw
 
 Primary purpose is for catching wireless guest account confirmations from Cisco Identity Services Engine and forwarding them as an SMS to the guest user.
 
+Copywrite
+=========
+
+Copyright (c) 2014 Teamsquare Pty. Ltd.
+
 Contributing
 ========================
 
