@@ -3,7 +3,7 @@ require 'twilio-ruby'
 
 class CiscoController < ApplicationController
   def ise_guest
-    throw params[:mandrill_events]
+    throw JSON.parse(params[:mandrill_events])
     
     params[:mandrill_events].each do |event|
       message = event['msg']['text']
